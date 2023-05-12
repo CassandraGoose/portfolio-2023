@@ -82,6 +82,7 @@ jobs:
           wait-on: "http://localhost:3000"
 
   deploy:
+    needs: Cypress-Test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
