@@ -81,11 +81,10 @@ jobs:
           start: npm start
 
   deploy:
-    needs: Cypress-Test
+    needs: [build, Cypress-Test]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
     runs-on: ubuntu-latest
     name: Deploy
     steps:
