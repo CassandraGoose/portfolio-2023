@@ -72,7 +72,7 @@ jobs:
     steps:
       - name: Checkout GitCode
         uses: actions/checkout@v3
-      - name: Run Cypress Test
+      - name: Run run
         uses: cypress-io/github-action@v5
         with:
           command: npm run build
