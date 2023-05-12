@@ -1,4 +1,4 @@
-name: Cypress and Deploy
+name: Test and Deploy
 
 on:
   push:
