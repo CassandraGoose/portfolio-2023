@@ -1,4 +1,5 @@
 # My Personal Website 2023
+![image](https://github.com/cassandraGoose/portfolio-2023/actions/workflows/main.yml/badge.svg 'build status')
 
 ---
 
