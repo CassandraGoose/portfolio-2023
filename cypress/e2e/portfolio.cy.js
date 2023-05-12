@@ -21,7 +21,7 @@ describe('portfolio', () => {
       "I'm a JavaScript developer with a knack for weaving "
     );
     cy.get('[data-cy="github-button"]').should('contain', 'GitHub');
-    cy.get('[data-cy="linkedin-button"]').should('contain', 'LinkedIn');
+    cy.get('[data-cy="linkedin-button"]').should('contain', 'Chicken');
     cy.get('[data-cy="codewars-button"]').should('contain', 'CodeWars');
   });
 
