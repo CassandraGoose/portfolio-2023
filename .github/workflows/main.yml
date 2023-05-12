@@ -20,22 +20,7 @@ env:
   # BUILD_PATH: subfolder
 
 jobs:
-  Cypress-Test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout GitCode
-        uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Start App
-        run: npm start
-      - name: Run Cypress Test
-        uses: cypress-io/github-action@v5.7.2
-        with:
-          command: npx cypress run
-          browser: chrome
   build:
-    needs: Cypress-Test
     name: Build
     runs-on: ubuntu-latest
     steps:
@@ -80,6 +65,21 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ${{ env.BUILD_PATH }}/dist
+
+  Cypress-Test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitCode
+        uses: actions/checkout@v2
+      - name: Run Built Application
+        run: npm run preview
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v5.7.2
+        with:
+          command: npx cypress run
+          browser: chrome
+          wait-on: "http://localhost:3000"
 
   deploy:
     environment:
