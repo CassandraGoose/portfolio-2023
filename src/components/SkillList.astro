@@ -8,9 +8,9 @@ const { skills, title } = Astro.props;
 ---
 
 <li class='p-8 break-inside-avoid'>
-  <p class='font-bold my-2'>{title.toUpperCase()}</p>
+  <p class='font-bold my-2' data-cy="skill-details-title">{title.toUpperCase()}</p>
   <hr class='border-black' />
   <ul class='my-2'>
-    {skills.map((skill) => <li>{skill}</li>)}
+    {skills.map((skill) => <li data-cy="skill">{skill}</li>)}
   </ul>
 </li>

@@ -5,12 +5,12 @@ import Card from '../components/Card.astro';
 <Card>
   <p
     slot='navigation'
-    class='border-r border-solid border-black justify-center px-4 flex items-center'>
+    class='border-r border-solid border-black justify-center px-4 flex items-center' data-cy="about-tag">
     ABOUT
   </p>
-  <p slot='card-context' class='m-4'>Hi, I'm Cassandra.</p>
+  <p slot='card-context' class='m-4' data-cy="about-title">Hi, I'm Cassandra.</p>
   <div slot='card-body'>
-    <p class='m-4'>
+    <p class='m-4' data-cy="about-details">
       I'm a JavaScript developer with a knack for weaving education and code
       together. I enjoy working throughout the stack and have a particular love
       for creating front end applications. I believe that coding is a craft and
@@ -23,7 +23,7 @@ import Card from '../components/Card.astro';
         class='ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
         href='https://github.com/CassandraGoose'
         target='_blank'
-        rel='noopener noreferrer'>
+        rel='noopener noreferrer' data-cy="github-button">
         GitHub
       </a>
       <a
@@ -31,6 +31,7 @@ import Card from '../components/Card.astro';
         href='https://www.linkedin.com/in/cassandra-rt/'
         target='_blank'
         rel='noopener noreferrer'
+        data-cy="linkedin-button"
         >LinkedIn
       </a>
       <a
@@ -38,6 +39,7 @@ import Card from '../components/Card.astro';
         href='https://www.codewars.com/users/ummmheck'
         target='_blank'
         rel='noopener noreferrer'
+        data-cy="codewars-button"
         >CodeWars
       </a>
     </div>

@@ -5,14 +5,14 @@ import Card from '../components/Card.astro';
 <Card>
   <p
     slot='navigation'
-    class='border-r border-solid border-black justify-center px-4 flex items-center'>
-    Talks
+    class='border-r border-solid border-black justify-center px-4 flex items-center' data-cy="talks-tag">
+    TALKS
   </p>
-  <h1 slot='card-context' class='m-4'>
+  <h1 slot='card-context' class='m-4' data-cy="talks-title">
     I like to give meetup and conference talks whenever I am able to!
   </h1>
-  <ul slot='card-body' class='m-4 list-disc'>
-    <ul class='m-4 list-disc'>
+  <div slot='card-body' class='m-4 list-disc'>
+    <ul class='m-4 list-disc' data-cy="talks-list">
       <li class='ml-4 mb-4'>
         <a
           class='italic'
@@ -94,5 +94,5 @@ import Card from '../components/Card.astro';
         <p class='text-lg'>October, 2018</p>
       </li>
     </ul>
-  </ul>
+  </div>
 </Card>

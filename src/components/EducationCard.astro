@@ -5,10 +5,10 @@ import Card from '../components/Card.astro';
 <Card>
   <p
     slot='navigation'
-    class='border-r border-solid border-black justify-center px-4 flex items-center'>
+    class='border-r border-solid border-black justify-center px-4 flex items-center' data-cy="education-tag">
     EDUCATION & LEARNING
   </p>
-  <h1 slot='card-context' class='m-4'>
+  <h1 slot='card-context' class='m-4' data-cy="education-title">
     I've had some formal education and some of that has been on...education. So,
     I think it's safe to say that I know how to learn. I believe there is value
     in learning many disciplines and skills - not only technologies and
@@ -17,7 +17,7 @@ import Card from '../components/Card.astro';
   </h1>
   <div slot='card-body' class='m-4'>
     <p class='font-bold'>Formal Education</p>
-    <ul class='m-4 list-disc'>
+    <ul class='m-4 list-disc' data-cy="formal-education-list">
       <li class='ml-4 mb-4'>
         <p class='italic'>Web Development Certificate: 2016-2017</p>
         <p class='text-lg'>Galvanize - Web Development Immersive</p>
@@ -30,7 +30,7 @@ import Card from '../components/Card.astro';
       </li>
     </ul>
     <p class='font-bold m4'>Personal & Professional Learning</p>
-    <ul class='list-disc m-4'>
+    <ul class='list-disc m-4' data-cy="education-list">
       <li class='ml-4 mb-4'>
         <p class='italic'>CS50</p>
         <p class='text-lg'>An Open/Online Course from Harvard</p>

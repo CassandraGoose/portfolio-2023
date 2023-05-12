@@ -5,14 +5,14 @@ import Card from '../components/Card.astro';
 <Card>
   <p
     slot='navigation'
-    class='border-r border-solid border-black justify-center px-4 flex items-center'>
+    class='border-r border-solid border-black justify-center px-4 flex items-center' data-cy="work-tag">
     WORK EXPERIENCE
   </p>
-  <h1 slot='card-context' class='m-4'>
+  <h1 slot='card-context' class='m-4' data-cy="work-title">
     I have experience as an individually contributing developer, a tech lead,
     and an instructor.
   </h1>
-  <ul slot='card-body' class='m-4 list-disc'>
+  <ul slot='card-body' class='m-4 list-disc' data-cy="work-list">
     <li class='ml-4'>
       <p class='italic'>Instructor of Front End Engineering</p>
       <p class='text-lg'>June 2021 - current</p>
