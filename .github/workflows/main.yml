@@ -66,7 +66,7 @@ jobs:
         with:
           path: ${{ env.BUILD_PATH }}/dist
 
-  Cypress-Test:
+  cypress-test:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -77,10 +77,10 @@ jobs:
         with:
           command: npm run build
           start: npm start
-          spec: cypress/e2d/portfolio.cy.js
+          spec: cypress/e2e/portfolio.cy.js
 
   deploy:
-    needs: [build, Cypress-Test]
+    needs: [build, cypress-test]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
