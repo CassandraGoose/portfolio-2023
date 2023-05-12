@@ -1,0 +1,16 @@
+---
+export interface Props {
+  skills: string[];
+  title: string;
+}
+
+const { skills, title } = Astro.props;
+---
+
+<li class='p-8 break-inside-avoid'>
+  <p class='font-bold my-2'>{title.toUpperCase()}</p>
+  <hr class='border-black' />
+  <ul class='my-2'>
+    {skills.map((skill) => <li>{skill}</li>)}
+  </ul>
+</li>

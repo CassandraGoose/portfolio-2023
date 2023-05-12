@@ -1,0 +1,33 @@
+---
+import Card from '../components/Card.astro';
+---
+
+<Card>
+  <p
+    slot='navigation'
+    class='border-r border-solid border-black justify-center px-4 flex items-center'>
+    WORK EXPERIENCE
+  </p>
+  <h1 slot='card-context' class='m-4'>
+    I have experience as an individually contributing developer, a tech lead,
+    and an instructor.
+  </h1>
+  <ul slot='card-body' class='m-4 list-disc'>
+    <li class='ml-4'>
+      <p class='italic'>Instructor of Front End Engineering</p>
+      <p class='text-lg'>June 2021 - current</p>
+    </li>
+    <li class='ml-4 mt-4'>
+      <p class='italic'>Software Engineer / Tech Lead</p>
+      <p class='text-lg'>October 2018 - January 2021</p>
+    </li>
+    <li class='ml-4 mt-4'>
+      <p class='italic'>Front End Developer</p>
+      <p class='text-lg'>February 2018 - October 2018</p>
+    </li>
+    <li class='ml-4 mt-4'>
+      <p class='italic'>Full Stack Resident Instructor</p>
+      <p class='text-lg'>April 2017 - February 2018</p>
+    </li>
+  </ul>
+</Card>

@@ -1,0 +1,45 @@
+---
+import Card from '../components/Card.astro';
+---
+
+<Card>
+  <p
+    slot='navigation'
+    class='border-r border-solid border-black justify-center px-4 flex items-center'>
+    ABOUT
+  </p>
+  <p slot='card-context' class='m-4'>Hi, I'm Cassandra.</p>
+  <div slot='card-body'>
+    <p class='m-4'>
+      I'm a JavaScript developer with a knack for weaving education and code
+      together. I enjoy working throughout the stack and have a particular love
+      for creating front end applications. I believe that coding is a craft and
+      I aim to deliver thoughtful, empathetic, and elegant code. When I'm not
+      crafting code, you can find me indulging my creative side as an artist,
+      musician, and writer.
+    </p>
+    <div class='flex pt-4 pb-8'>
+      <a
+        class='ml-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+        href='https://github.com/CassandraGoose'
+        target='_blank'
+        rel='noopener noreferrer'>
+        GitHub
+      </a>
+      <a
+        class='mx-4 px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+        href='https://www.linkedin.com/in/cassandra-rt/'
+        target='_blank'
+        rel='noopener noreferrer'
+        >LinkedIn
+      </a>
+      <a
+        class='px-4 border border-solid border-black flex justify-center items-center shadow-lg'
+        href='https://www.codewars.com/users/ummmheck'
+        target='_blank'
+        rel='noopener noreferrer'
+        >CodeWars
+      </a>
+    </div>
+  </div>
+</Card>

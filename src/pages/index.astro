@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import About from '../components/AboutCard.astro';
+import Intro from '../components/IntroCard.astro';
+import Skills from '../components/SkillsCard.astro';
+import Projects from '../components/ProjectsCard.astro';
+import Portrait from '../components/Portrait.astro';
+import History from '../components/HistoryCard.astro';
+import Education from '../components/EducationCard.astro';
+import Volunteering from '../components/VolunteeringCard.astro';
+import Talks from '../components/TalkCard.astro';
+---
+
+<Layout title='CASSANDRA'>
+  <main class='grid grid-cols-2 text-xl mt-8 mx-16 relative z-50'>
+    <div>
+      <Intro />
+      <section>
+        <About />
+        <Skills />
+        <History />
+        <Volunteering />
+        <Talks />
+      </section>
+    </div>
+
+    <section class='mx-4 my-16'>
+      <Portrait />
+      <Projects />
+      <Education />
+    </section>
+  </main>
+</Layout>

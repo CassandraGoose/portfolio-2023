@@ -1,0 +1,83 @@
+---
+import Card from '../components/Card.astro';
+import SkillList from '../components/SkillList.astro';
+
+const languageSkills = [
+  'JavaScript',
+  'TypeScript',
+  'Node',
+  'HTML',
+  'CSS',
+  'SASS',
+];
+const frameworkSkills = [
+  'React',
+  'Vue',
+  'Next.js',
+  'React Router',
+  'Vue Router',
+  'Redux',
+  'Vuex',
+  'JSX',
+  'Express',
+  'Tailwind',
+  'JSS',
+  'MUI',
+  'Vuetify',
+  'Bootstrap',
+  'Buefy',
+  'TypeORM',
+  'Objection.js',
+  'Knex.js',
+  'Prisma',
+];
+const testingSkills = [
+  'Jest',
+  'Cypress',
+  'Mocha / Chai',
+  'React Testing Library',
+  'Vue Test Utils',
+];
+const dbSkills = ['PostgreSQL', 'MSSQL'];
+const cloudSkills = [
+  'Serverless',
+  'Heroku',
+  'Vercel',
+  'AWS - RDS',
+  'AWS - Lambda',
+  'AWS - VPC',
+  'AWS - S3',
+  'AWS - API Gateway',
+  'AWS - Cognito',
+  'CircleCI',
+];
+const toolSkills = [
+  'Git',
+  'Webpack',
+  'Vite',
+  'GitHub',
+  'BitBucket',
+  'Jira',
+  'GitHub Projects',
+];
+const techniqueSkills = ['Agile', 'Pair Programming'];
+const rustySkills = ['D3', 'AngularJS', 'Java', 'Python', 'C', 'C#', 'jQuery'];
+---
+
+<Card title="I've been coding since 2016.">
+  <p
+    slot='navigation'
+    class='border-r border-solid border-black justify-center px-4 flex items-center'>
+    SKILLS
+  </p>
+  <ul slot='card-body' class='columns-2'>
+    <SkillList title={'Languages'} skills={languageSkills} />
+    <SkillList title={'Frameworks & Libraries'} skills={frameworkSkills} />
+    <SkillList title={'Databases'} skills={dbSkills} />
+    <SkillList title={'Testing'} skills={testingSkills} />
+    <SkillList title={'Cloud & Deployment'} skills={cloudSkills} />
+    <SkillList title={'Tools'} skills={toolSkills} />
+    <SkillList title={'Techniques'} skills={techniqueSkills} />
+    <SkillList title={'Rusty & Learning'} skills={rustySkills} />
+  </ul>
+</Card>

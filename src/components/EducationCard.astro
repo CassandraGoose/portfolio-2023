@@ -1,0 +1,74 @@
+---
+import Card from '../components/Card.astro';
+---
+
+<Card>
+  <p
+    slot='navigation'
+    class='border-r border-solid border-black justify-center px-4 flex items-center'>
+    EDUCATION & LEARNING
+  </p>
+  <h1 slot='card-context' class='m-4'>
+    I've had some formal education and some of that has been on...education. So,
+    I think it's safe to say that I know how to learn. I believe there is value
+    in learning many disciplines and skills - not only technologies and
+    work-related content. As such, I've included information on my personal and
+    continuing education.
+  </h1>
+  <div slot='card-body' class='m-4'>
+    <p class='font-bold'>Formal Education</p>
+    <ul class='m-4 list-disc'>
+      <li class='ml-4 mb-4'>
+        <p class='italic'>Web Development Certificate: 2016-2017</p>
+        <p class='text-lg'>Galvanize - Web Development Immersive</p>
+      </li>
+      <li class='ml-4 mb-4'>
+        <p class='italic'>
+          Bachelor of Music Education, summa cum laude: 2009-2014
+        </p>
+        <p class='text-lg'>University of Northern Colorado</p>
+      </li>
+    </ul>
+    <p class='font-bold m4'>Personal & Professional Learning</p>
+    <ul class='list-disc m-4'>
+      <li class='ml-4 mb-4'>
+        <p class='italic'>CS50</p>
+        <p class='text-lg'>An Open/Online Course from Harvard</p>
+        <p class='text-lg'>
+          An introduction to the inteleectual enterprises of computer science
+          and the art of programming. Includes foundational knowledge of the
+          following tech: C, Python, SQL
+        </p>
+      </li>
+      <li class='ml-4 mb-4'>
+        <p class='italic'>Steps In Japanese 1</p>
+        <p class='text-lg'>An Open/Online Course from Waseda University</p>
+        <p class='text-lg'>Fundamental/Survival Japenese Language Course</p>
+      </li>
+      <li class='ml-4 mb-4'>
+        <p class='italic'>Functional JavaScript First Steps</p>
+        <p class='text-lg'>FrontEnd Masters</p>
+        <p class='text-lg'>
+          An introduction to functional programming using JavaScript
+        </p>
+      </li>
+      <li class='ml-4 mb-4'>
+        <p class='italic'>The Hard Parts of Functional JavaScript</p>
+        <p class='text-lg'>FrontEnd Masters</p>
+        <p class='text-lg'>
+          A deep dive into functional concepts using JavaScript
+        </p>
+      </li>
+      <li class='ml-4 mb-4'>
+        <p class='italic'>Comics: Art in Relationship</p>
+        <p class='text-lg'>
+          An Open/Online Course from California College of the Arts
+        </p>
+        <p class='text-lg'>
+          An exploration of the context and concepts that tell stories within
+          comics.
+        </p>
+      </li>
+    </ul>
+  </div>
+</Card>
