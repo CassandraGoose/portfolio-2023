@@ -26,7 +26,8 @@ jobs:
       - name: Checkout GitCode
         uses: actions/checkout@v2
       - name: Start App
-        uses: npm start
+        with:
+          command: npm start
       - name: Run Cypress Test
         uses: cypress-io/github-action@v5.7.2
         with:
