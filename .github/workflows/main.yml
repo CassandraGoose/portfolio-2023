@@ -75,7 +75,6 @@ jobs:
       - name: Run run
         uses: cypress-io/github-action@v5
         with:
-          command: npm run build
           start: npm start
           spec: cypress/e2e/portfolio.cy.js
 
