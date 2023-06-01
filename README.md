@@ -2,7 +2,6 @@
 ![image](https://github.com/cassandraGoose/portfolio-2023/actions/workflows/main.yml/badge.svg 'build status')
 
 ![image](./test_results/lighthouse_accessibility.svg 'accessibility lighthouse score')
-![image](./test_results/lighthouse_performance.svg 'performance lighthouse score')
 
 ---
 
