@@ -5,6 +5,8 @@
 
 ## This application exists to provide information on me as a developer and person. 
 
+Please check it out [here](https://www.cassandracodesthings.online/)
+
 ---
 
 ## Technology Used:
@@ -27,6 +29,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ---
-
-### Todos: 
-- [ ] Update midjourney generated chibi illustration with my own.

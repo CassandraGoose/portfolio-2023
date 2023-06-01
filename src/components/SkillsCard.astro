@@ -2,15 +2,12 @@
 import Card from '../components/Card.astro';
 import SkillList from '../components/SkillList.astro';
 
-const languageSkills = [
+const FRONT_END_SKILLS = [
   'JavaScript',
   'TypeScript',
-  'Node',
   'HTML',
   'CSS',
   'SASS',
-];
-const frameworkSkills = [
   'React',
   'Vue',
   'Next.js',
@@ -19,27 +16,32 @@ const frameworkSkills = [
   'Redux',
   'Vuex',
   'JSX',
-  'Express',
   'Tailwind',
   'JSS',
   'MUI',
   'Vuetify',
   'Bootstrap',
   'Buefy',
+];
+
+const BACK_END_SKILLS = [
+  'Node',
+  'TypeScript',
+  'Express',
   'TypeORM',
   'Objection.js',
   'Knex.js',
   'Prisma',
 ];
-const testingSkills = [
+const TESTING_SKILLS = [
   'Jest',
   'Cypress',
   'Mocha / Chai',
   'React Testing Library',
   'Vue Test Utils',
 ];
-const dbSkills = ['PostgreSQL', 'MSSQL'];
-const cloudSkills = [
+const DB_SKILLS = ['PostgreSQL', 'MSSQL'];
+const CLOUD_SKILLS = [
   'Serverless',
   'Heroku',
   'Vercel',
@@ -51,7 +53,7 @@ const cloudSkills = [
   'AWS - Cognito',
   'CircleCI',
 ];
-const toolSkills = [
+const TOOLS_SKILLS = [
   'Git',
   'Webpack',
   'Vite',
@@ -60,8 +62,8 @@ const toolSkills = [
   'Jira',
   'GitHub Projects',
 ];
-const techniqueSkills = ['Agile', 'Pair Programming'];
-const rustySkills = ['D3', 'AngularJS', 'Java', 'Python', 'C', 'C#', 'jQuery'];
+const TECHNIQUE_SKILLS = ['Agile', 'Pair Programming'];
+const RUSTY_SKILLS = ['D3', 'AngularJS', 'Java', 'Python', 'C', 'C#', 'jQuery'];
 ---
 
 <Card title="I've been coding since 2016.">
@@ -71,13 +73,13 @@ const rustySkills = ['D3', 'AngularJS', 'Java', 'Python', 'C', 'C#', 'jQuery'];
     SKILLS
   </p>
   <ul slot='card-body' class='columns-2'>
-    <SkillList title={'Languages'} skills={languageSkills} />
-    <SkillList title={'Frameworks & Libraries'} skills={frameworkSkills} />
-    <SkillList title={'Databases'} skills={dbSkills} />
-    <SkillList title={'Testing'} skills={testingSkills} />
-    <SkillList title={'Cloud & Deployment'} skills={cloudSkills} />
-    <SkillList title={'Tools'} skills={toolSkills} />
-    <SkillList title={'Techniques'} skills={techniqueSkills} />
-    <SkillList title={'Rusty & Learning'} skills={rustySkills} />
+    <SkillList title={'Front End'} skills={FRONT_END_SKILLS} />
+    <SkillList title={'Back End'} skills={BACK_END_SKILLS} />
+    <SkillList title={'Databases'} skills={DB_SKILLS} />
+    <SkillList title={'Testing'} skills={TESTING_SKILLS} />
+    <SkillList title={'Cloud & Deployment'} skills={CLOUD_SKILLS} />
+    <SkillList title={'Tools'} skills={TOOLS_SKILLS} />
+    <SkillList title={'Techniques'} skills={TECHNIQUE_SKILLS} />
+    <SkillList title={'Rusty & Learning'} skills={RUSTY_SKILLS} />
   </ul>
 </Card>
