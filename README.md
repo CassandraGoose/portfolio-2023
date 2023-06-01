@@ -1,29 +1,38 @@
-# My Personal Website 2023
-![image](https://github.com/cassandraGoose/portfolio-2023/actions/workflows/main.yml/badge.svg 'build status')
+# Personal Site 2023
 
-![image](./test_results/lighthouse_accessibility.svg 'accessibility lighthouse score')
+<div align="center">
 
----
+![image](https://i.imgur.com/14pIhci.png 'chibi illustration of me')
 
-## This application exists to provide information on me as a developer and person. 
+<p>This application exists to provide information on me as a developer and person</p>
+<a href="https://www.cassandracodesthings.online/">cassandracodesthings.online</a>
+<br/>
+<br/>
 
-Please check it out [here](https://www.cassandracodesthings.online/)
+</div>
 
----
+<div align="center">
 
-## Technology Used:
+![image](https://github.com/cassandraGoose/portfolio-2023/actions/workflows/main.yml/badge.svg 'build status') ![image](./test_results/lighthouse_accessibility.svg 'accessibility lighthouse score')
 
 ![image](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE 'astro badge') ![image](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white 'tailwind badge') ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white 'HTML badge') ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E 'javascript badge') ![image](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white 'cyrpress badge') ![image](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white 'github pages badge') ![image](https://img.shields.io/badge/Github%20Actions-282a2e?style=for-the-badge&logo=githubactions&logoColor=367cfe 'github actions badge')
+
+</div>
 
 ---
 
 ## Run the tests via:
 
-`npx cypress run`
+```
+npx cypress run
+```
+or
 
-or to see the tests run in a browser:
+```
+npx cypress open
+```
 
-`npx cypress open` and click options to run.
+to see the tests in a browser.
 
 ---
 
