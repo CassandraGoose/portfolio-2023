@@ -24,6 +24,7 @@ Please check it out [here](https://www.cassandracodesthings.online/)
 or to see the tests run in a browser:
 
 `npx cypress open` and click options to run.
+
 ---
 
 ## Commands to Setup/Run/Use the app:
