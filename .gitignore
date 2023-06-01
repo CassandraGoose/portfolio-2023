@@ -21,5 +21,5 @@ pnpm-debug.log*
 .DS_Store
 
 # test stuff
-cypress/screenshots/*
-cypress/videos/*
+cypress/screenshots/
+cypress/videos/
