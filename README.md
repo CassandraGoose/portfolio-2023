@@ -1,6 +1,9 @@
 # My Personal Website 2023
 ![image](https://github.com/cassandraGoose/portfolio-2023/actions/workflows/main.yml/badge.svg 'build status')
 
+![image](./test_results/lighthouse_accessibility.svg 'accessibility lighthouse score')
+![image](./test_results/lighthouse_performance.svg 'performance lighthouse score')
+
 ---
 
 ## This application exists to provide information on me as a developer and person. 
