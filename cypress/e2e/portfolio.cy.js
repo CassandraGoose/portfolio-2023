@@ -47,8 +47,8 @@ describe('portfolio', () => {
     cy.get('[data-cy="skill-details-title"]').should('have.length', 8);
     cy.get('[data-cy="skill-details-title"]')
       .eq(1)
-      .should('contain', 'FRAMEWORKS & LIBRARIES');
-    cy.get('[data-cy="skill"]').should('have.length', 58);
+      .should('contain', 'BACK END');
+    cy.get('[data-cy="skill"]').should('have.length', 59);
   });
 
   it('displays work information in the work card', () => {
@@ -102,6 +102,6 @@ describe('portfolio', () => {
     cy.get('[data-cy="education-list"]')
       .children()
       .eq(3)
-      .should('contain', 'The Hard Parts');
+      .should('contain', 'Steps In Japanese');
   });
 });

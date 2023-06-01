@@ -15,6 +15,15 @@ Please check it out [here](https://www.cassandracodesthings.online/)
 
 ---
 
+## Run the tests via:
+
+`npx cypress run`
+
+or to see the tests run in a browser:
+
+`npx cypress open` and click options to run.
+---
+
 ## Commands to Setup/Run/Use the app:
 
 All commands are run from the root of the project, from a terminal:
