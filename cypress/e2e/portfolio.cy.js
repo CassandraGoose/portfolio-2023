@@ -48,7 +48,7 @@ describe('portfolio', () => {
     cy.get('[data-cy="skill-details-title"]')
       .eq(1)
       .should('contain', 'BACK END');
-    cy.get('[data-cy="skill"]').should('have.length', 59);
+    cy.get('[data-cy="skill"]').should('have.length', 60);
   });
 
   it('displays work information in the work card', () => {
@@ -66,9 +66,9 @@ describe('portfolio', () => {
       'contain',
       'VOLUNTEER EXPERIENCE'
     );
-    cy.get('[data-cy="volunteer-list"] > li').should('have.length', 2);
+    cy.get('[data-cy="volunteer-list"] > li').should('have.length', 3);
     cy.get('[data-cy="volunteer-list"] > li')
-      .eq(1)
+      .eq(2)
       .should('contain', 'ChickTech');
   });
 
@@ -98,10 +98,10 @@ describe('portfolio', () => {
       .children()
       .eq(1)
       .should('contain', 'Bachelor');
-    cy.get('[data-cy="education-list"]').children().should('have.length', 5);
+    cy.get('[data-cy="education-list"]').children().should('have.length', 6);
     cy.get('[data-cy="education-list"]')
       .children()
-      .eq(3)
+      .eq(4)
       .should('contain', 'Steps In Japanese');
   });
 });
