@@ -26,12 +26,18 @@ describe('portfolio', () => {
   });
 
   it('displays project information in the project card', () => {
-    cy.get('[data-cy="project-tag"]').should('contain', 'PROJECTS');
+    cy.get('[data-cy="project-tag"]').should('contain', 'PRODUCTION APPLICATIONS');
     cy.get('[data-cy="project-title"]').should(
       'contain',
       'I have had the opportunity to work on several production applications in'
     );
-    cy.get('[data-cy="project-details-title"]').should('have.length', 5);
+
+    cy.get('[data-cy="personal-project-tag').should('contain', 'PERSONAL PROJECTS');
+    cy.get('[data-cy="personal-project-title"]').should(
+      'contain',
+      'I tend to build projects to learn something'
+    );
+    cy.get('[data-cy="project-details-title"]').should('have.length', 9);
     cy.get('[data-cy="project-details-title"]')
       .eq(1)
       .should('contain', 'Higher Education');
