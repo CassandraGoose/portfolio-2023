@@ -21,12 +21,6 @@
 
 ---
 
-
-## Check It Out
-![Animated gif of website being used in desktop view](https://i.imgur.com/sgZN1VN.gif)
-
----
-
 ## Run the tests via:
 
 ```
