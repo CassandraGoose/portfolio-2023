@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![image](https://i.imgur.com/14pIhci.png 'chibi illustration of me')
+![image](https://i.imgur.com/bvvZ6rI.png 'black and white grid banner which reads front end / full stack / web / community')
 
 <p>This application exists to provide information on me as a developer and person</p>
 <a href="https://www.casscodes.online/">casscodes.online</a>
