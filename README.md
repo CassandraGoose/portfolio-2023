@@ -5,7 +5,7 @@
 ![image](https://i.imgur.com/14pIhci.png 'chibi illustration of me')
 
 <p>This application exists to provide information on me as a developer and person</p>
-<a href="https://www.cassandracodesthings.online/">cassandracodesthings.online</a>
+<a href="https://www.casscodes.online/">casscodes.online</a>
 <br/>
 <br/>
 
