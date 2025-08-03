@@ -6,7 +6,7 @@ describe("portfolio", () => {
   it("displays intro information in the intro card", () => {
     cy.get('[data-cy="intro-tag"]').should("contain", "INTRO");
     cy.get('[data-cy="title"]').should("contain", "CASS");
-    cy.get('[data-cy="label"]').should("contain", "web developer");
+    cy.get('[data-cy="label"]').should("contain", "front end / full stack / web / community");
   });
 
   it("displays about information in the about card", () => {
