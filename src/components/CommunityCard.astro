@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import ListItemLink from "../components/ListItemLink.astro";
 ---
 
 <Card>
@@ -16,98 +17,51 @@ import Card from "../components/Card.astro";
   </h1>
   <div slot="card-body" class="m-4 list-disc">
     <ul class="m-4 list-disc" data-cy="talks-list">
-      <li class="ml-4 mb-4">
-        <a class="italic"
-          href="https://www.youtube.com/live/_JDHxsgIwz4?si=BcpRgn4gcTtDqt0A&t=652"
-          target="_blank"
-          rel="noopener noreferrer">Meetup Talks? In this economy? (Yeah, and here’s how you can start)</a>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://www.meetup.com/DenverScript/events/dzlpnsyccmblc/"
-          target="_blank"
-          rel="noopener noreferrer">What is the Serverless Framework Anyways?</a
-        >
-        <p class="text-lg">September, 2021</p>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://www.meetup.com/DenverScript/events/schtzrycckbkc/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React and the Paradox of Choice
-        </a>
-        <p class="text-lg">July, 2021</p>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://www.meetup.com/node-js-denver-boulder/events/ktpcnryccgbtb/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Front End Showdown - Vue
-        </a>
-        <p class="text-lg">April, 2021</p>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://www.meetup.com/Denver-Vue-js-Meetup/events/wpwwnrybcfbfc/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Build a Chart with Vue-centric D3
-        </a>
-        <p class="text-lg">March, 2020</p>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://www.meetup.com/Denver-Vue-js-Meetup/events/wpwwnrybcfbfc/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Front End Showdown - Vue
-        </a>
-        <p class="text-lg">September, 2019</p>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://twitter.com/dvlpdnvr/status/1154522975665659908?s=20"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          It's a Beautiful Day in the Neighborhood
-        </a>
-        <p class="text-lg">August, 2019</p>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://www.meetup.com/Denver-Vue-js-Meetup/events/ltwpwmyzkbdc/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vue Slots in 8 Minutes or Less (Also given at DVLP DNVR 2019)
-        </a>
-        <p class="text-lg">July, 2019</p>
-      </li>
-      <li class="ml-4 mb-4">
-        <a
-          class="italic"
-          href="https://youtu.be/XUvXb3393ZY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          On Transitioning Into Web Development and Being a Noob Again
-        </a>
-        <p class="text-lg">October, 2018</p>
-      </li>
+      <ListItemLink
+        title="Meetup Talks? In this economy? (Yeah, and here’s how you can start)"
+        date="March, 2025"
+        link="https://www.youtube.com/live/_JDHxsgIwz4?si=BcpRgn4gcTtDqt0A&t=652"
+      />
+      <ListItemLink
+        title="What is the Serverless Framework Anyways?"
+        date="September, 2021"
+        link="https://www.meetup.com/DenverScript/events/dzlpnsyccmblc/"
+      />
+      <ListItemLink
+        title="React and the Paradox of Choice"
+        date="July, 2021"
+        link="https://www.meetup.com/DenverScript/events/schtzrycckbkc/"
+      />
+      <ListItemLink
+        title="Front End Showdown - Vue"
+        date="April, 2021"
+        link="https://www.meetup.com/node-js-denver-boulder/events/ktpcnryccgbtb/"
+      />
+      <ListItemLink
+        title="Build a Chart with Vue-centric D3"
+        date="March, 2020"
+        link="https://www.meetup.com/Denver-Vue-js-Meetup/events/wpwwnrybcfbfc/"
+      />
+      <ListItemLink
+        title="Front End Showdown - Vue"
+        date="September, 2019"
+        link="https://www.meetup.com/Denver-Vue-js-Meetup/events/wpwwnrybcfbfc/"
+      />
+      <ListItemLink
+        title="It's a Beautiful Day in the Neighborhood"
+        date="August, 2019"
+        link="https://twitter.com/dvlpdnvr/status/1154522975665659908?s=20"
+      />
+      <ListItemLink
+        title="Vue Slots in 8 Minutes or Less (Also given at DVLP DNVR 2019)"
+        date="July, 2019"
+        link="https://www.meetup.com/Denver-Vue-js-Meetup/events/ltwpwmyzkbdc/"
+      />
+      <ListItemLink
+        title="On Transitioning Into Web Development and Being a Noob Again"
+        date="October, 2018"
+        link="https://youtu.be/XUvXb3393ZY"
+      />
     </ul>
   </div>
 </Card>
